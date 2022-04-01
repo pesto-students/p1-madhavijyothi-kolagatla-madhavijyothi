@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+html, body {
+  height: 100%;
+}
+*{
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 0;
+  font-family: Lato, sans-serif;
+  color: #222;
+  font-size: 0.9em;
+}
+
+main {
+  flex: 1 0 auto; 
+  display: flex;
+}
+aside{
+  flex: 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f2f2f2;
+  i.fa{
+    font-size: 0.9em;
+  }
+}
+section.content{
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  .music-head{
+    flex: 0 0 280px;
+    display: flex;
+    padding: 40px;
+    background-color: #4e4e4e;
+    img{
+      width: 250px;
+      height: 200px;
+    }
+    .catty-music{
+      flex: 1 0 auto;
+      display: flex;
+      flex-direction: column;
+      font-weight: 300;
+      color: #fff;
+      padding-left: 50px;
+      div{
+        &:nth-child(1){
+          margin-bottom: auto;
+          p:first-child{
+            font-size: 1.8em;
+            margin: 0 0 10px;
+          }
+          p:not(:first-child){
+            font-size: .9em;
+            margin: 2px 0;
+          }
+        }
+        &:nth-child(2){
+          margin-top: 0;
+          i.fa{
+            font-size: .9em;
+            padding: 0 0.7em;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+  .music-list{
+    flex: 1 0 auto;
+    list-style: none;
+    padding: 5px 10px 0;
+    li{
+      display: flex;
+      padding: 0 20px;
+      min-height: 50px;
+      p{
+        flex: 0 0 25%;
+      }
+      span.catty-cloud{
+        border: 1px solid black;
+        font-size: 0.6em;
+        padding: 3px;
+      }
+      &:nth-child(2n) {
+        background-color: #f2f2f2;
+      }
+    }
+  }
+}
+
+footer {
+  flex: 0 0 90px; 
+  padding: 10px;
+  color: #fff;
+  background-color: rgba(61, 100, 158, .9);
+  display: flex;
+  .music-info{
+    display: flex;
+    margin-right: auto;
+    img{
+      width: 100px;
+      height: 70px;
+      padding-right: 10px;
+    }
+  }
+  .video-control{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    li{
+      font-size: 0.9em;
+      color: #fff;
+      align-items: center;
+    }
+  }
+}
