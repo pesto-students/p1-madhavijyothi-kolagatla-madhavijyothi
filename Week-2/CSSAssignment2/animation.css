@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.body-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    z-index: 1;
+    transition: 1s;
+}
+
+.container .red{
+    transform-origin: top left;
+    transform: rotate(0);
+}
+
+.container .blue{
+    transform-origin: bottom left;
+    transform: rotate(0);
+}
+
+.container .yellow{
+    transform-origin: top right;
+    transform: rotate(0);
+}
+
+.container .green{
+    transform-origin: bottom right;
+    transform: rotate(0);
+}
+
+.container:hover .red{
+    transform-origin: top left;
+    transform: rotate(90deg);
+}
+
+.container:hover .blue{
+    transform-origin: bottom left;
+    transform: rotate(-90deg);
+}
+
+.container:hover .yellow{
+    transform-origin: top right;
+    transform: rotate(-90deg);
+}
+
+.container:hover .green{
+    transform-origin: bottom right;
+    transform: rotate(90deg);
+}
+
+.red {
+    background: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
