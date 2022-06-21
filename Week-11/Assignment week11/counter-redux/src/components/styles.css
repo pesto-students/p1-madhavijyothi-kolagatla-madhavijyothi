@@ -1,0 +1,20 @@
+button {
+  width: 300px;
+  height: 50px;
+  font-size: 24px;
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.handler {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#Add {
+  background-color: blue;
+  color: white;
+}
